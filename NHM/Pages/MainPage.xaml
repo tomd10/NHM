@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NHM.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Button 
+                x:Name="buttonLocal"
+                Text="Load configuration from local storage"
+                Clicked="buttonLocalClicked"
+                Margin="10"/>
+            <Button 
+                x:Name="buttonLocalSave"
+                Text="Save configuration to local storage"
+                Clicked="buttonLocalSaveClicked"
+                Margin="10"/>
+            <Button 
+                x:Name="buttonFile"
+                Text="Load configuration from local filesystem"
+                Clicked="buttonFileClicked"
+                Margin="10"/>
+            <Entry
+                x:Name="entryURL"
+                Placeholder="URL"
+                Text="https://kraken.pedf.cuni.cz/~chabadat/NHM/"
+                Margin="10"/>
+            <Button 
+                x:Name="buttonHttp"
+                Text="Load configuration from HTTP"
+                Clicked="buttonHttpClicked"
+                Margin="10"/>
+            <Entry 
+                x:Name="entryMaster"
+                Placeholder="AES key"
+                IsPassword="True"
+                Margin="10"/>
+            <Button 
+                x:Name="buttonMaster"
+                Text="Decrypt"
+                Clicked="buttonMasterClicked"
+                Margin="10"/>
+
+            <Button 
+                x:Name="buttonStart"
+                Text="Start"
+                Clicked="buttonStartClicked"
+                Margin="10"/>
+
+            <Button 
+                x:Name="buttonDebug"
+                Text="Restart"
+                Clicked="buttonDebugClicked"
+                Margin="10"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
